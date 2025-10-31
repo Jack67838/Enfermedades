@@ -7,17 +7,21 @@ body{
   background-image: url(/Odette/Enfermedades/img/unnamed.jpg);
 }
 
-.menu {
+body{
+  margin: 0px;
+  background-image: url(/img/Fondo.jpg);
+}
+nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #2e2e2e;   
+    background-color: #2e2e2e;   
   padding: 12px 0;
   z-index: 1000;
 }
 
-.menu ul {
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0px;
@@ -26,23 +30,52 @@ body{
   gap: 40px;                   
 }
 
-.menu ul li {
+nav ul li {
   padding: 10px;
+  color: white;
 }
 
-.menu a {
+nav a {
   text-decoration: none;
   color: #ffffff;             
   font-weight: 600;
   font-size: 1em;
 }
 
-.menu a:hover {
+.selected {
+  background-color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
   color: red;             
 }
 
-.selected {
-  background-color: gray;
+header{
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 100px;
+  margin: 0px;
+  text-align: center;
+  background-color: #2e2e2e;
+  color: white;
+}
+header h1{
+  margin: 0px;
+  font-size: 2.4em;
+}
+header p{
+  margin: 0px;
+  font-size: 30px;
+  padding: 20px;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .carrusel {
@@ -67,26 +100,6 @@ body{
   33% { transform: translateX(-100%); }
   66% { transform: translateX(-100%); }
   100% { transform: translateX(0); }
-}
-
-
-header {
-  background-color: #2e2e2e;
-  color: white;
-  text-align: center;
-  padding: 80px;    
-}
-
-header h1 {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2.4em;
-  margin: 0 0 10px 0;
-}
-
-header p {
-  font-size: 1.2em;
-  margin: 0;
-  color: #f2f2f2;             
 }
 
 section {
@@ -168,7 +181,26 @@ button {
   height: 100%;
   border: 0;
 }
-
+.catalogo{
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.catalogo article{
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px;
+}
+.catalogo article p.bloque{
+  padding: 5px;
+  border: solid 1px;
+  width: 60px;
+}
+.catalogo article p.bloque:hover{
+ color: red;
+}
 
 .footer {
     background-color: #1e1e1e;
@@ -191,7 +223,7 @@ button {
   }
 
   .footer-section h3, .footer-section h4 {
-    color: #d4af37; 
+    color: #d4af37; /* tono dorado elegante */
   }
 
   .footer-section p, .footer-section li, .footer-section a {
@@ -213,10 +245,3 @@ button {
     font-size: 0.85em;
     color: #999;
   }
-
-
-
-
-
-
-
